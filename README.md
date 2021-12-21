@@ -6,6 +6,7 @@
 	- Escolha a opção Extrair aqui
 	- Execute android studio
 	- File - open (Arquivo- abrir) vai na unidade onde o arquivo foi extraído dá ok.
+	- git clone do repositório e importar no Android Studio.
 	
 
 
@@ -34,7 +35,24 @@ baseado na arquitetura MVVM e um padrão de repositório.
 ![kotlin2](https://user-images.githubusercontent.com/49800137/146968188-d88e3371-3a5c-453f-8cf5-b156847281e4.png)
 
 
-
+- Requisitos do Produto
+	- Tela de loading;
+	- Poster (podem existir filmes ainda sem poster);
+	- Nome do filme;
+	- Data de estreia (se existir);
+	- Ordene os filmes pelos quais estejam próximos de entrarem em cartaz (campo premiereDate);
+	- Organize o projeto, preferêncialmente utilizando alguma arquitetura.
+- Sugestões para o Produto
+	- Busca;
+	- Pull to refresh;
+	- Tela de detalhes de um filme;
+	- Favoritar filme;
+	- Compartilhar;
+	- Filtrar por estreias do mês;
+	- Alguns filmes podem estar em pré-venda (campo isPreSale), pode incluir um elemento diferenciado;
+	- Animações são bem-vindas.
+- Mais uma coisa
+	Tiver problema no github, ssh e token, quando subir projeto, passou por cima dele, perdi todo comentário.
 
 ### ----------------------------------------------------------------------------------------------
 
