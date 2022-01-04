@@ -15,4 +15,8 @@
     <color name="background_theme">#151c25</color>
     <color name="light_blue">#6F8EB3</color>
     <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlueGrey">#292A50</color>
+    <color name="colorBlue">#14153D</color>
+    <color name="colorAccentRed">#D81B60</color>
+    <color name="colorWhiteGrey">#F7F7F7</color>
 </resources>

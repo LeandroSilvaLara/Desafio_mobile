@@ -34,5 +34,10 @@
     <string name="share_movie_text">Confira esse filme!</string>
     <string name="button_favorite">Favoritar</string>
     <string name="button_remove_favorite">Desfavoritar</string>
+    <string name="when">Sessões</string>
+    <string name="datetime">Data e Hora</string>
+    <string name="cinema">Cinema</string>
+    <string name="movie_date">22 Dezembro, 22:00</string>
+    <string name="cinema_location">Shopping Grande Rio - Kinoplex</string>
 
 </resources>
