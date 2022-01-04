@@ -10,6 +10,6 @@
         </shape>
     </item>
     <item android:drawable="@color/background_theme"/>
-    <item android:drawable="@drawable/ic_icon_app"
+    <item android:drawable="@drawable/movie_logo"
         android:gravity="center"/>
 </layer-list>

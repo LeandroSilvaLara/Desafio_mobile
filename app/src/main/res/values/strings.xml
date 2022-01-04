@@ -42,5 +42,14 @@
     <string name="settings">Definições</string>
     <string name="my_wallet">Minha Carteira</string>
     <string name="edit_profile">Editar Perfil</string>
+    <string name="skip">Pular</string>
+    <string name="next">Próximo</string>
+    <string name="now_playing">Lista de Filmes</string>
+    <string name="now_playing_desc">Descrições dos Filmes</string>
+    <string name="start">Começar</string>
+    <string name="cashless">Sem Dinheiro</string>
+    <string name="cashless_desc">Use carteira eletrônica\npara comprar ingressos de cinema</string>
+    <string name="pre_sale">Listas de Filmes</string>
+    <string name="pre_sale_desc">Descrições de Filmes</string>
 
 </resources>

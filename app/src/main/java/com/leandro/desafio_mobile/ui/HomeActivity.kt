@@ -40,6 +40,9 @@ class HomeActivity : AppCompatActivity() {
                 R.id.menu_favorite -> {
                     selectedFragment = FavoriteFragment()
                 }
+                R.id.navigation_settings -> {
+                    selectedFragment = SettingsFragment()
+                }
             }
             supportFragmentManager.beginTransaction().replace(R.id.frame_layout_main, selectedFragment!!).commit()
             true

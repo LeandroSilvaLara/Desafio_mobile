@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
     android:background="@drawable/shape_background_blue"
-    tools:context=".ui.favorite.SearchMovieActivity">
+    >
 
     <TextView
         android:id="@+id/textView"
