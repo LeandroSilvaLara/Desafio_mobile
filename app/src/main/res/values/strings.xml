@@ -39,5 +39,8 @@
     <string name="cinema">Cinema</string>
     <string name="movie_date">22 Dezembro, 22:00</string>
     <string name="cinema_location">Shopping Grande Rio - Kinoplex</string>
+    <string name="settings">Definições</string>
+    <string name="my_wallet">Minha Carteira</string>
+    <string name="edit_profile">Editar Perfil</string>
 
 </resources>
