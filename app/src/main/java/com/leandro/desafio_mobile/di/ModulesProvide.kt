@@ -1,12 +1,10 @@
 package com.leandro.desafio_mobile.di
 
 import android.content.Context
-import android.provider.SyncStateContract
 import androidx.room.Room
-import com.leandro.desafio_mobile.api.MovieAPi
-import com.leandro.desafio_mobile.data.database.MovieDatabase
+import com.leandro.desafio_mobile.data.local.database.MovieDatabase
+import com.leandro.desafio_mobile.data.remote.api.MovieAPi
 import com.leandro.desafio_mobile.utils.Constants
-import com.leandro.desafio_mobile.utils.Constants.Companion.BASE_URL
 import com.leandro.desafio_mobile.utils.Constants.Companion.MOVIE_DATABASE_NAME
 import dagger.Module
 import dagger.Provides
@@ -32,7 +30,7 @@ object ModulesProvide {
 
     @Singleton
     @Provides
-    fun provideMovieApi(): MovieAPi {
+    fun provideMovieApi() : MovieAPi {
         val logging = HttpLoggingInterceptor()
         logging.setLevel(HttpLoggingInterceptor.Level.BODY)
         val client = OkHttpClient.Builder()
@@ -47,5 +45,5 @@ object ModulesProvide {
             .build()
             .create(MovieAPi::class.java)
     }
-}
 
+}

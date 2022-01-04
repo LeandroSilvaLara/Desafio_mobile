@@ -2,19 +2,12 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/menu_feed"
-        android:icon="@drawable/menu_home_selector"
+        android:icon="@drawable/ic_movies"
         android:title="@string/menu_feed" />
 
     <item
         android:id="@+id/menu_favorite"
         android:icon="@drawable/ic_favorite"
         android:title="@string/menu_favorite" />
-
-
-    <item
-        android:id="@+id/navigation_settings"
-        android:icon="@drawable/menu_profile_selector"
-        android:title="@string/settings" />
-
 
 </menu>

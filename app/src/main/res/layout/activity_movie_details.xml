@@ -4,9 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/shape_background_blue"
-    tools:context=".ui.favorite.MovieDetailsActivity"
-    >
+    android:background="?attr/backgroundColor"
+    tools:context=".ui.MovieDetailsActivity">
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:id="@+id/coordinatorLayout"
@@ -90,16 +89,6 @@
                     android:orientation="vertical"
                     app:layout_constraintTop_toTopOf="parent">
 
-                    <com.google.android.material.button.MaterialButton
-                        android:id="@+id/button_list_comprar"
-                        android:layout_width="50dp"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="right"
-                        style="@style/DesafioMobileButton.Compra"
-                        android:layout_marginStart="8dp"
-                        android:layout_weight="5"
-                         />
-
                     <TextView
                         android:id="@+id/text_title_movie"
                         style="@style/DesafioMobileTextView.Large.Bold"
@@ -109,7 +98,7 @@
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
-                        tools:text="Matrix Resurrections" />
+                        tools:text="Harry Potter" />
 
                     <com.google.android.material.button.MaterialButton
                         android:id="@+id/button_open_trailer"
@@ -147,8 +136,8 @@
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/text_title_movie"
-                        tools:text="Neo vive uma vida aparentemente comum sob sua identidade original como Thomas A. Anderson em São Francisco, Califórnia, com um terapeuta que lhe prescreve pílulas azuis para neutralizar as coisas estranhas e não naturais que ele ocasionalmente vislumbra em sua mente. Ele também conhece uma mulher que parece ser Trinity (Carrie Anne-Moss), mas nenhum deles se reconhece. No entanto, quando uma nova versão de Morpheus oferece a ele a pílula vermelha e reabre sua mente para o mundo da Matrix, que se tornou mais seguro e perigoso nos anos desde a infecção de Smith, Neo volta a se juntar a um grupo de rebeldes para lutar contra um novo e maois perigoso inimigo e livrar todos da Matrix novamente.
-"/>
+                        tools:text="Quando dois ladrões invadem sua casa no subúrbio uma noite, Hutch se recusa a defender a si mesmo ou a sua família, na esperança de evitar violência grave. Seu filho adolescente, Blake, está desapontado com ele e sua esposa, Becca, parece se afastar ainda mais.\nEm consequência, o incidente acerta a raiva latente de Hutch, desencadeando instintos adormecidos e impulsionando-o em um caminho brutal que revelará segredos obscuros e habilidades letais. Em uma enxurrada de socos, tiros e pneus cantando, Hutch deve salvar sua família de um adversário perigoso e garantir que ele nunca será subestimado como anônimo novamente." />
+
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="1dp"
@@ -239,11 +228,7 @@
                         android:layout_weight="5"
                         android:text="@string/button_favorite"/>
 
-
-
                 </LinearLayout>
-
-
 
 
             </androidx.constraintlayout.widget.ConstraintLayout>
@@ -261,6 +246,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

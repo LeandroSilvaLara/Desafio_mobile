@@ -1,16 +1,13 @@
 package com.leandro.desafio_mobile.repositories
 
-import com.leandro.desafio_mobile.api.MovieAPi
-import com.leandro.desafio_mobile.data.database.MovieDatabase
-import com.leandro.desafio_mobile.data.entity.MovieEntity
-import com.leandro.desafio_mobile.data.local.MoviesListResponse
+import com.leandro.desafio_mobile.data.local.database.MovieDatabase
+import com.leandro.desafio_mobile.data.local.entity.MovieEntity
+import com.leandro.desafio_mobile.data.remote.api.MovieAPi
+import com.leandro.desafio_mobile.data.remote.models.MoviesListResponse
 import com.leandro.desafio_mobile.utils.Resource
 import javax.inject.Inject
 
-class MovieRepositoryImplement @Inject constructor(
-    private val api: MovieAPi,
-    private val movieDatabase: MovieDatabase
-) : MovieRepository {
+class MovieRepositoryImplement @Inject constructor (private val api: MovieAPi, private val movieDatabase: MovieDatabase) : MovieRepository {
 
     override suspend fun getMovies(): Resource<MoviesListResponse> {
         return try {
@@ -30,7 +27,7 @@ class MovieRepositoryImplement @Inject constructor(
 
     }
 
-    override suspend fun saveMovie(movie: MovieEntity): Long {
+    override suspend fun saveMovie(movie : MovieEntity): Long {
         return movieDatabase.getMovieDAO().saveMovie(movie)
     }
 

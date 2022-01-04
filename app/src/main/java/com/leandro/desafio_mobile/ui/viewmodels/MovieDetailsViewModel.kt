@@ -5,7 +5,6 @@ import dagger.hilt.android.lifecycle.HiltViewModel
 import javax.inject.Inject
 
 @HiltViewModel
-class MovieDetailsViewModel @Inject constructor(private val repository: MovieRepository) :
-    MovieParentViewModel(repository) {
+class MovieDetailsViewModel @Inject constructor(private val repository: MovieRepository) : MovieParentViewModel(repository) {
 
 }

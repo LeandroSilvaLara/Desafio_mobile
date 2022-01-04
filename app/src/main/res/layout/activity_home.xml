@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="?attr/backgroundColor"
-    tools:context=".ui.home.HomeActivity">
+    tools:context=".ui.HomeActivity">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/include_toolbar"
@@ -32,9 +32,9 @@
         style="@style/Animation.Design.BottomSheetDialog"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:itemIconTint="@color/icon_color_navigation"
-        app:itemTextColor="@color/icon_color_navigation"
-        android:background="@color/hex_triplet"
+        app:itemIconTint="@color/bg_icon_color_navigation"
+        app:itemTextColor="@color/bg_icon_color_navigation"
+        android:background="@color/background_theme"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

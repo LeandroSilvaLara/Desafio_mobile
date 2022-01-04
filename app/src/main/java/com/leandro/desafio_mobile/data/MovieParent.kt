@@ -1,11 +1,10 @@
 package com.leandro.desafio_mobile.data
 
-import com.leandro.desafio_mobile.data.models.Image
-import com.leandro.desafio_mobile.data.models.PremiereDate
-import com.leandro.desafio_mobile.data.models.Trailer
+import com.leandro.desafio_mobile.data.remote.models.Image
+import com.leandro.desafio_mobile.data.remote.models.PremiereDate
+import com.leandro.desafio_mobile.data.remote.models.Trailer
 import com.leandro.desafio_mobile.utils.BackEndUtils
 import java.util.*
-
 
 abstract class MovieParent {
     abstract val ancineId: String
@@ -18,7 +17,7 @@ abstract class MovieParent {
     abstract val director: String
     abstract val distributor: String
     abstract val duration: String
-    abstract val trailers: List<Trailer>?
+    abstract val trailers : List<Trailer>?
     abstract val genres: List<String>
     abstract val id: String
     abstract val images: List<Image>
@@ -35,21 +34,15 @@ abstract class MovieParent {
     abstract val title: String
     abstract val urlKey: String
 
-    val dateMillis: Long
+    val dateMillis : Long
         get() = premiereDate?.let { BackEndUtils.parseDateTime(it.localDate)?.time } ?: 0
 
-    private val premiereDateDate: Date?
+    private val premiereDateDate : Date?
         get() = premiereDate?.let { BackEndUtils.parseDateTime(it.localDate) }
 
-    val dateFormatted: String?
-        get() = premiereDateDate?.let {
-            BackEndUtils.formatDateFormatPremiereDate(
-                it
-            )
-        }
+    val dateFormatted   : String? get() = premiereDateDate?.let { BackEndUtils.formatDateFormatPremiereDate(it) }
 
-    val genresFormatted: String
-        get() = if (genres.size > 1) {
-            "${genres.first()}, ${genres.last()}"
-        } else genres.first()
+    val genresFormatted : String get() = if (genres.size > 1) {
+        "${genres.first()}, ${genres.last()}"
+    } else genres.first()
 }

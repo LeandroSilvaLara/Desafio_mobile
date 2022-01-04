@@ -1,9 +1,5 @@
 <resources>
-    <string name="app_name">desafio_mobile</string>
-    <string name="settings">Definições</string>
-    <string name="ticket">Ticket</string>
-    <string name="my_wallet">Minha Carteira</string>
-    <string name="edit_profile">Editar Perfil</string>
+    <string name="app_name">desafio-mobile</string>
 
     <!-- MainActivity -->
     <string name="menu_feed">Filmes</string>
@@ -38,22 +34,5 @@
     <string name="share_movie_text">Confira esse filme!</string>
     <string name="button_favorite">Favoritar</string>
     <string name="button_remove_favorite">Desfavoritar</string>
-    <string name="choose_seat">Choose Seat</string>
-    <string name="purchase_ticket">Purchase Ticket</string>
-    <string name="cinema_screen">Cinema Screen</string>
-    <string name="todays">Hoje</string>
-    <string name="when">Sessões</string>
-    <string name="datetime">Data e Hora</string>
-    <string name="cinema">Cinema</string>
-    <string name="movie_date">22 Dezembro, 22:00</string>
-    <string name="cinema_location">" Shopping Grande Rio - Kinoplex"</string>
-    <string name="skip">Pular</string>
-    <string name="next">Próximo</string>
-    <string name="now_playing">Lista de Filmes</string>
-    <string name="now_playing_desc">Descrição dos filmes</string>
-    <string name="start">Começar</string>
-    <string name="cashless">Sem Dinheiro</string>
-    <string name="cashless_desc">Use carteira eletrônica\npara comprar ingressos de cinema</string>
-    <string name="pre_sale">Pré venda</string>
-    <string name="pre_sale_desc">As últimas atualizações do filme</string>
+
 </resources>
